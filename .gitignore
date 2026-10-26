@@ -1,0 +1,31 @@
+# Terraform working directories
+.terraform/
+.terraform.tfstate.lock.info
+
+# State files (may contain secrets; bootstrap uses local state)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files that may hold secrets
+*.auto.tfvars
+secret*.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plan output
+*.tfplan
+tfplan
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
